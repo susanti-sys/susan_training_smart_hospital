@@ -13,6 +13,14 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+#MainMenu {visibility:hidden;}
+footer {visibility:hidden;}
+header {visibility:hidden;}
+</style>
+""", unsafe_allow_html=True)
+
 #Kita membuka file model AI yang sudah kita training sebelumnya.
 @st.cache_resource
 def load_model():
